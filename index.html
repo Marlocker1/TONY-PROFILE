@@ -1,15 +1,83 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my profile</title>
+    <title>Auza - Teach Company</title>
+     <link rel="stylesheet" href="Styles/Styles.css">
 </head>
 <body>
-    <h1>TONY</h1>
-    <img src="image.png" alt="TONY" width="200">
-<p> im an awesome website</p>
-<h1><music>Song writter/David Archulata</music></h1>
-<audio controls>
-    <source src="/David Archuleta_ GLORIOUS from Meet the Mormons-yt.savetube.me - Copy - Copy.mp3">
-</audio>
+  
+
+<header>
+    <div>
+        <img src="images/a logo design for Auza, a tech company, with dark themes.png" alt="" width="100px">
+</div> 
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about us.html">About</a>
+        <a href="Project.html">Services</a>
+        <a href="contact us.html">Contact</a>
+        <a href="">settings</a>
+
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to Auza</h1>
+    <div class="cta">
+        <button onclick="showLearnMore()">Learn More</button>
+    </div>
+    <div id="learn-more-content" style="display: none; margin-top: 20px;">
+        <p>At Auza, we are dedicated to pushing the boundaries of technology. Our team of experts specializes in cutting-edge solutions, including virtual reality, cyborg integration, and artificial intelligence. Join us on our journey to innovate and transform the future.</p>
+    </div>
+    <script>
+        function showLearnMore() {
+            const content = document.getElementById('learn-more-content');
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        }
+    </script></div>
+</section>
+
+<section class="features">
+    <div class="feature">
+        <img src="images/vr.jpg" alt="vr headset">
+        <h2>Vr headset</h2>
+        <p>VR headsets provide an immersive experience by simulating a virtual environment, allowing users to interact with digital worlds in a realistic way.</p>
+    </div>
+    <div class="feature">
+        <img src="images/cyborg2.jpg" alt="cyborg" style="width: 100%; height: auto;">
+        <h2>Cyborg integration</h2>
+        <p>Cyborg technology integrates human and machine capabilities, offering advanced tech services such as enhanced physical abilities, sensory augmentation, and innovative solutions for various industries.</p>
+    </div>
+    <div class="feature">
+        <img src="images/Ai.avif" alt="Artificial Intelligence">
+        <h2>Artificial Intelligence</h2>
+        <p>Artificial Intelligence (AI) as a service provides businesses and individuals with access to advanced AI tools and technologies, enabling automation, data analysis, predictive modeling, and personalized solutions without the need for in-house expertise.</p>
+    </div>
+    <div class="feature">
+        <img src="images/robotics.jpg" alt="Robotics">
+        <h2>Robotics</h2>
+        <p>Robotics technology is revolutionizing industries by automating tasks, improving efficiency, and enabling innovative solutions in manufacturing, healthcare, and beyond.</p>
+    </div>
+    <div class="feature">
+        <img src="images/cloud computing.jpg" alt="Cloud Computing">
+        <h2>Cloud Computing</h2>
+        <p>Cloud computing provides scalable and flexible solutions for data storage, processing, and collaboration, empowering businesses to operate efficiently in a digital world.</p>
+    </div>
+    <div class="feature">
+        <img src="images/future-of-Blockchain.jpg" alt="Blockchain">
+        <h2>Blockchain</h2>
+        <p>Blockchain technology ensures secure and transparent transactions, offering decentralized solutions for industries such as finance, supply chain, and healthcare.</p>
+    </div>
+</section>
+
+<footer>
+    <p>Contact us: info@auza.com</p>
+    <p>Follow us on social media!</p>
+    <p>Newsletter Signup: <input type="email" placeholder="Enter your email"></p>
+</footer>
+
 </body>
+</html>

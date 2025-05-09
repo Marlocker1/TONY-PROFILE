@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    background-image: url(../images/background\ design\ of\ a\ technology\ website.png);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav a:hover {
+    color: #28a745;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.cta button:hover {
+    background: #218838;
+    transform: scale(1.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.feature img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+header img {
+    animation: logoBounce 3s infinite ease-in-out;
+}
+
+@keyframes logoBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #0f0f0f, #1a1a1a);
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #28a745;
+}
+
+nav a {
+    color: #28a745;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #28a745;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+header img {
+    animation: logoBounce 3s infinite ease-in-out;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+
+.cta {
+    margin-top: 20px
+}
+.cta button {
+    padding: 10px 20px;
+    background: #28a745;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+.feature {
+    text-align: center;
+    width: 30%;
+}
+.feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+}
